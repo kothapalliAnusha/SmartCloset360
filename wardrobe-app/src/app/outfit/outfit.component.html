@@ -1,0 +1,69 @@
+
+<body>
+    <header>
+        <nav>
+            <h1>Welcome to Thread Fusion</h1>
+            <p>Explore your clothing collection</p>
+            <ul>
+                <li><a href="/wardrobe">Home</a></li>
+                <li><a href="/clothing">Clothing</a></li>
+                <li><a href="/outfit">Outfit</a></li>
+                <li><a href="/suggestion">Suggestions</a></li>
+                <li><a href="/feedback">Feedback</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <li><a href="/register">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="wardrobe-grid">
+           
+
+            <div class="wardrobe-item">
+
+                <div class="success-message" [ngClass]="{'show': uploadSuccess}">
+                    <p>Your dress has been successfully added!</p>
+                  </div>
+                  
+                <div class="uploaded-image" *ngIf="dressImage">
+                    <img [src]="dressImage" alt="Uploaded Dress">
+                </div>
+              </div>
+            <!-- Add a form for adding dresses -->
+            <div class="wardrobe-item add-dress">
+                <h2>Add Dress</h2>
+                <form #dressForm (ngSubmit)="onSubmit()" action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="dress-type">Dress Type:</label>
+                        <select id="dress-type" name="dress-type">
+                            <option value="Casual">Casual</option>
+                            <option value="Formal">Formal</option>
+                            <option value="Party">Party</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dress-material">Dress Material:</label>
+                        <select id="dress-material" name="dress-material">
+                            <option value="Cotton">Cotton</option>
+                            <option value="Silk">Silk</option>
+                            <option value="Denim">Denim</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="dress-image">Upload Your Dress:</label>
+                        <input type="file" id="dress-image" name="dress-image" accept="image/*">
+                    </div>
+                    <button type="submit">Add Dress</button>
+                </form>
+                <!-- <div class="uploaded-image" *ngIf="dressImage">
+                    <img [src]="dressImage" alt="Uploaded Dress">
+                </div> -->
+            </div>
+            
+        </section>
+    </main>
+</body>
+

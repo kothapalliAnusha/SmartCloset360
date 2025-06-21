@@ -1,0 +1,51 @@
+<header>
+    <nav>
+        <h1>Welcome to Thread Fusion</h1>
+        <p>Explore your clothing collection</p>
+        <ul>
+            <li><a href="/wardrobe">Home</a></li>
+            <li><a href="/clothing">Clothing</a></li>
+            <li><a href="/outfit">Outfit</a></li>
+            <li><a href="/suggestion">Suggestions</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <li><a href="/register">Sign Up</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<div>
+    <h2>Dress Suggestion</h2>
+    <form (submit)="onSubmit()">
+      <div>
+        <label for="season">Select Season</label>
+        <select id="season" name="season" [(ngModel)]="selectedSeason">
+          <option value="Summer">Summer</option>
+          <option value="Winter">Winter</option>
+          <option value="Rainy">Rainy</option>
+        </select>
+      </div>
+      <div>
+        <label for="occasion">Select Occasion</label>
+        <select id="occasion" name="occasion" [(ngModel)]="selectedOccasion">
+          <option value="Party">Party</option>
+          <option value="Festival">Festival</option>
+          <option value="Picnic">Picnic</option>
+        </select>
+      </div>
+      <div>
+        <label for="place">Select Place</label>
+        <select id="place" name="place" [(ngModel)]="selectedPlace">
+          <option value="Party">Party</option>
+          <option value="Business Meeting">Business Meeting</option>
+        </select>
+      </div>
+      <button type="submit">Get Dress Recommendation</button>
+    </form>
+    <div *ngIf="suggestionMessage">
+      <h3>Suggested Dress</h3>
+      <p>{{ suggestionMessage }}</p>
+    </div>
+  </div>

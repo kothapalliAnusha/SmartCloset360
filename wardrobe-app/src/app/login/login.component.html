@@ -1,0 +1,26 @@
+<!-- login.component.html -->
+
+<header>
+    <nav>
+        <h1>Welcome to Thread Fusion</h1>
+        <p>Explore your clothing collection</p>
+        <ul>
+            <li><a href="/wardrobe">Home</a></li>
+            <li><a href="/clothing">Clothing</a></li>
+            <li><a href="/outfit">Outfit</a></li>
+            <li><a href="/suggestion">Suggestions</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <li><a href="/register">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+<h2>Login</h2>
+<form (ngSubmit)="onSubmit()">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" [(ngModel)]="username" required>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="password" required>
+  <button type="submit" [disabled]="loading">Login</button>
+  <div class="error" *ngIf="error">{{ error }}</div>
+</form>
