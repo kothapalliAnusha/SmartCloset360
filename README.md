@@ -26,20 +26,20 @@
 
 ## 🖼️ Screenshots
 
-> All screenshots are placed in the `screenshots/` folder of this repo. Here’s a visual walkthrough:
+>  Here’s a visual walkthrough:
 
 | 📍 Page             | 📷 Preview                            |
 |--------------------|----------------------------------------|
-| 🏠 Home             | ![](screenshots/home.png)             |
-| 📝 Registration     | ![](screenshots/register.png)         |
-| 🔐 Login            | ![](screenshots/login.png)            |
-| 🧥 Wardrobe         | ![](screenshots/wardrobe.png)         |
-| 📤 Upload           | ![](screenshots/upload.png)           |
-| 💡 Suggestions      | ![](screenshots/suggestion.png)       |
-| 💬 Feedback         | ![](screenshots/feedback.png)         |
-| 🚪 Logout           | ![](screenshots/logout.png)           |
+| 🏠 Home             | ![](home.png)             |
+| 📝 Registration     | ![](register.png)         |
+| 🔐 Login            | ![](login.png)            |
+| 🧥 Wardrobe         | ![](wardrobe.png)         |
+| 📤 Upload           | ![](upload.png)           |
+| 💡 Suggestions      | ![](suggestion.png)       |
+| 💬 Feedback         | ![](feedback.png)         |
+| 🚪 Logout           | ![](logout.png)           |
 
-> _You can drag and drop your screenshot images into the `screenshots/` folder or upload them through GitHub’s web UI._
+
 
 ---
 
