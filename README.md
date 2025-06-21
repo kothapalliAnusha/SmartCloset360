@@ -1,27 +1,100 @@
-# WardrobeApp
+# 👚 SmartCloset360 – Your Intelligent Digital Wardrobe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+> _"Your wardrobe tells your story — SmartCloset360 makes sure it's a good one."_ 👠✨
 
-## Development server
+**SmartCloset360** is your personalized digital fashion assistant — crafted with Angular, driven by creativity, and styled for sustainability. It helps you manage your wardrobe, suggest outfits, and rediscover hidden gems in your closet — all from your browser.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🌍 Live Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🔗 [SmartCloset360 Live](https://kothapalliAnusha.github.io/SmartCloset360/)  
+> _Note: Some features are still being developed. UI routes are visible but may not be fully interactive yet._
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ✨ Features
 
-## Running unit tests
+- 👕 Organize your clothing items digitally  
+- 📤 Upload and manage outfits  
+- 🔐 User registration and login functionality  
+- 🧠 Smart outfit suggestion engine (coming soon!)  
+- 📱 Responsive design for mobile and desktop  
+- 🌿 Promotes sustainable fashion practices  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🖼️ Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+> All screenshots are placed in the `screenshots/` folder of this repo. Here’s a visual walkthrough:
 
-## Further help
+| 📍 Page             | 📷 Preview                            |
+|--------------------|----------------------------------------|
+| 🏠 Home             | ![](screenshots/home.png)             |
+| 📝 Registration     | ![](screenshots/register.png)         |
+| 🔐 Login            | ![](screenshots/login.png)            |
+| 🧥 Wardrobe         | ![](screenshots/wardrobe.png)         |
+| 📤 Upload           | ![](screenshots/upload.png)           |
+| 💡 Suggestions      | ![](screenshots/suggestion.png)       |
+| 💬 Feedback         | ![](screenshots/feedback.png)         |
+| 🚪 Logout           | ![](screenshots/logout.png)           |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> _You can drag and drop your screenshot images into the `screenshots/` folder or upload them through GitHub’s web UI._
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Angular 16  
+- **Languages**: TypeScript, HTML5, CSS3  
+- **Routing**: Angular Router  
+- **Hosting**: GitHub Pages  
+
+---
+
+## 💻 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/kothapalliAnusha/SmartCloset360.git
+cd SmartCloset360
+npm install
+ng serve
+Visit 👉 http://localhost:4200/ in your browser.
+
+🚀 Deployment Guide
+To deploy this project on GitHub Pages:
+
+bash
+Copy
+Edit
+ng build --configuration production --base-href=/SmartCloset360/
+npx angular-cli-ghpages --dir=dist/wardrobe-app
+📌 Make sure outputPath in angular.json is set to dist/wardrobe-app.
+
+🔮 Future Enhancements
+🧠 AI-powered outfit recommendations
+
+🌦️ Weather-aware styling suggestions
+
+📲 Google & Facebook login options
+
+👗 User style profiles and analytics
+
+💌 Wishlist, favorites & outfit sharing
+
+🙏 Acknowledgment
+Grateful to the Angular community and open-source contributors who made this project possible.
+Thanks to everyone who believes fashion can be smart, inclusive, and sustainable. 💚
+
+👩‍💻 About the Creator
+Crafted with ❤️ by Anusha Kothapalli
+Driven by purpose, powered by code, inspired by fashion. 🌸
+
+📄 License
+This project is licensed under the MIT License.
+You're welcome to use, remix, or build upon this project with attribution.
+
+“Good fashion is for everyone. So is good code.”
+
